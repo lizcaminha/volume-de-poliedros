@@ -21,6 +21,37 @@ public class grupo2atividade4{
         break;
        }
     }
+    public class Prisma{
+    int altura, ladoraio;
+    public static double volumePrisma(int altura, int areaBase){
+        double volume;
+        volume=(double)altura*areaBase;
+        return volume;
+    }
+    class prismaBaseRetangular extends Prisma{
+    int lado2;
+    public int areaBase(){
+        int area;
+        area=lado1*lado2;
+        return area;
+    }
+}
+
+    public static class prismaBaseTriangular extends Prisma{
+    
+    }
+    
+    public static class prismaCilindro extends Prisma{
+    
+    }
+    
+    public static class prismaBasesMaiores extends Prisma{
+        int n_lados;
+    }
+    
+    public static class prismaBasePentagonal extends prismaBasesMaiores{
+    
+    }
 }
 public class Prisma{
     int altura;
