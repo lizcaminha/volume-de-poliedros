@@ -2,7 +2,7 @@
 
 // ainda não testei pra ver se compila, vamos terminar todas as funcionalidades primeiro.
 import java.util.Scanner;
-public class GRUPO2{
+public class grupo2Atividade4{
     public static void main(){
         Scanner leia = new Scanner(System.in);
         //aqui vai ficar a interação com o usuário, e todos os metodos serão chamados aqui.
