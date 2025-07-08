@@ -1,6 +1,7 @@
 // ainda não testei pra ver se compila, vamos terminar todas as funcionalidades primeiro.
 import java.util.Scanner;
-public class grupo2atividade4{
+import java.lang.Math;
+public class grupo2Atividade4{
     public static void main(){
         Scanner leia = new Scanner(System.in);
         //aqui vai ficar a interação com o usuário, e todos os metodos serão chamados aqui.
@@ -30,19 +31,27 @@ public class grupo2atividade4{
     }
     class prismaBaseRetangular extends Prisma{
     int lado2;
-    public int areaBase(){
+    public static int baseQuadrado(int ladoraio, int lado2){
         int area;
-        area=lado1*lado2;
+        area = ladoraio * lado2;
         return area;
     }
 }
 
     public static class prismaBaseTriangular extends Prisma{
-    
+        public static double baseTriangulo(int ladoraio){
+            double area;
+            area = (math.pow((double)ladoraio, 2));
+            return area;
+        }
     }
     
     public static class prismaCilindro extends Prisma{
-    
+        public static int baseCirculo(int lado){
+            int area;
+            area = lado;
+            return area;
+        }
     }
     
     public static class prismaBasesMaiores extends Prisma{
