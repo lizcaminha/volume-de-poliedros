@@ -16,65 +16,52 @@ public class grupo2Atividade4{
         case 1:
             System.out.println("Forma escolhida: Prisma");
             //fazer subescolha de prismas...?
-            Prisma poliedro = new Prisma(); // apenas criar o poliedro já com a base. essa linha está errada.
             System.out.println("Qual é a altura do prisma?");
             leia.nextInt(poliedro.altura);
+        break;
+        case 2:
+            
         break;
        }
     }
     public class Prisma{
-    int altura, ladoraio;
-    public static double volumePrisma(int altura, int areaBase){
-        double volume;
-        volume=(double)altura*areaBase;
-        return volume;
+            int altura, ladoraio;
+            public double volumePrisma(int altura, int areaBase){
+                double volume;
+                volume=(double)altura*areaBase;
+                return volume;
+        }
     }
     class prismaBaseRetangular extends Prisma{
-    int lado2;
-    public static int baseQuadrado(int ladoraio, int lado2){
-        int area;
-        area = ladoraio * lado2;
-        return area;
+            int lado2;
+            public int baseQuadrado(int ladoraio, int lado2){
+                int area;
+                area = ladoraio * lado2;
+                return area;
+        }
     }
-}
 
-    public static class prismaBaseTriangular extends Prisma{
-        public static double baseTriangulo(int ladoraio){
+    public class prismaBaseTriangular extends Prisma{
+        public double baseTriangulo(int ladoraio){
             double area;
             area = (math.pow((double)ladoraio, 2));
             return area;
         }
     }
     
-    public static class prismaCilindro extends Prisma{
-        public static int baseCirculo(int lado){
+    public class prismaCilindro extends Prisma{
+        public int baseCirculo(int lado){
             int area;
             area = lado;
             return area;
         }
     }
     
-    public static class prismaBasesMaiores extends Prisma{
+    public class prismaBasesMaiores extends Prisma{
         int n_lados;
     }
     
-    public static class prismaBasePentagonal extends prismaBasesMaiores{
+    public class prismaBasePentagonal extends prismaBasesMaiores{
     
-    }
-}
-public class Prisma{
-    int altura;
-    public static double volumePrisma(int altura, int areaBase){
-        double volume;
-        volume=(double)altura*areaBase;
-        return volume;
-    }
-}
-class prismaBaseQuadrada extends Prisma{
-    int lado1, lado2;
-    public int areaBase(){
-        int area;
-        area=lado1*lado2;
-        return area;
     }
 }
