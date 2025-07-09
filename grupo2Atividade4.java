@@ -32,7 +32,7 @@ public class grupo2Atividade4{
                 return volume;
         }
     }
-    class prismaBaseRetangular extends Prisma{
+    public class prismaBaseRetangular extends Prisma{
             int lado2;
             public int baseQuadrado(int ladoraio, int lado2){
                 int area;
@@ -63,5 +63,66 @@ public class grupo2Atividade4{
     
     public class prismaBasePentagonal extends prismaBasesMaiores{
     
+    }
+
+    public class prismaBaseHexagonal extends prismaBasesMaiores{
+
+    }
+
+    public class Esfera{
+        int raio;
+    }
+
+    public class Octaedro{
+        int lado;
+    } 
+
+    public class Piramide{
+            int altura, ladoraio;
+            public double volumePiramide(int altura, int areaBase){
+                double volume;
+                volume=(double)(altura*areaBase)/3;
+                return volume;
+        }
+    }
+    public class piramideBaseRetangular extends Piramide{
+            int lado2;
+            public int baseQuadrado(int ladoraio, int lado2){
+                int area;
+                area = ladoraio * lado2;
+                return area;
+        }
+    }
+
+    public class piramideBaseTriangular extends Piramide{
+        public double baseTriangulo(int ladoraio){
+            double area;
+            area = (math.pow((double)ladoraio, 2));
+            return area;
+        }
+    }
+    
+    public class piramideCilindro extends Piramide{
+        public int baseCirculo(int lado){
+            int area;
+            area = lado;
+            return area;
+        }
+    }
+    
+    public class piramideBasesMaiores extends Piramide{
+        int n_lados;
+    }
+    
+    public class piramideBasePentagonal extends piramideBasesMaiores{
+    
+    }
+
+    public class piramideBaseHexagonal extends piramideBasesMaiores{
+
+    }
+
+    public class piramideBaseHeptagonal extends piramideBasesMaiores{
+
     }
 }
