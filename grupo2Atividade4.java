@@ -44,17 +44,16 @@ public class grupo2Atividade4{
     public class prismaBaseTriangular extends Prisma{
         public double baseTriangulo(int ladoraio){
             double area;
-            area = (math.pow((double)ladoraio, 2));
+            area = (Math.pow((double)ladoraio, 2)*Math.sqrt(3))/4;
             return area;
         }
     }
     
     public class prismaCilindro extends Prisma{
-        public int baseCirculo(int lado){
-            int area;
-            area = lado;
+        int area;
+            double valorPi = Math.PI;
+            area = valorPi * (Math.pow(ladoraio));
             return area;
-        }
     }
     
     public class prismaBasesMaiores extends Prisma{
@@ -97,7 +96,7 @@ public class grupo2Atividade4{
     public class piramideBaseTriangular extends Piramide{
         public double baseTriangulo(int ladoraio){
             double area;
-            area = (math.pow((double)ladoraio, 2));
+            area = (Math.pow((double)ladoraio, 2)*Math.sqrt(3))/4;
             return area;
         }
     }
@@ -105,7 +104,8 @@ public class grupo2Atividade4{
     public class piramideCilindro extends Piramide{
         public int baseCirculo(int lado){
             int area;
-            area = lado;
+            double valorPi = Math.PI;
+            area = valorPi * (Math.pow(ladoraio));
             return area;
         }
     }
