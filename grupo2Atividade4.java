@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Grupo2Atividade4 {
+public class grupo2Atividade4 {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
@@ -9,69 +9,60 @@ public class Grupo2Atividade4 {
         boolean continuar = true;
 
         while (continuar) {
-            System.out.println("\nEscolha uma figura:");
-            System.out.println("1 - Prisma");
-            System.out.println("2 - Pirâmide");
-            System.out.println("3 - Outros Sólidos");
-            System.out.println("0 - Sair");
-            System.out.print("Opção: ");
+            System.out.println("\nEscolha uma figura: \n1 - Prisma \n 2 - Pirâmide \n3 - Outros sólidos \n0 - Sair \nOpção:  \n");
             opcao = leia.nextInt();
 
             switch (opcao) {
                 case 1:
-                    System.out.println("\nEscolha o tipo de prisma:");
-                    System.out.println("1 - Retangular");
-                    System.out.println("2 - Triangular");
-                    System.out.println("3 - Cilíndrico");
-                    System.out.println("4 - Pentagonal");
-                    System.out.println("5 - Hexagonal");
-                    System.out.print("Opção: ");
+                    System.out.println("\nEscolha o formato da base: \n1 - Retangular \n 2 - Triangular \n3 - Circular \n4 - Pentagonal \n5 - Hexagonal \nOpção:  \n");
                     subOpcao = leia.nextInt();
 
                     System.out.print("Digite a altura do prisma: ");
                     int altura = leia.nextInt();
 
+                    double area, volume;
+
                     switch (subOpcao) {
                         case 1: // Retangular
-                            System.out.print("Lado 1 da base: ");
-                            int l1 = leia.nextInt();
-                            System.out.print("Lado 2 da base: ");
-                            int l2 = leia.nextInt();
                             prismaBaseRetangular pr1 = new prismaBaseRetangular();
-                            int areaRet = pr1.baseQuadrado(l1, l2);
-                            System.out.println("Volume: " + pr1.volumePrisma(altura, areaRet));
+                            System.out.print("Lado 1 da base: ");
+                            pr1.lado = leia.nextInt();
+                            System.out.print("Lado 2 da base: ");
+                            pr1.lado2 = leia.nextInt();
+                            area = pr1.baseQuadrado();
+                            System.out.println("Volume: " + pr1.volumePrisma(altura, area));
                             break;
 
                         case 2: // Triangular
-                            System.out.print("Lado do triângulo equilátero: ");
-                            int ladoTri = leia.nextInt();
                             prismaBaseTriangular pr2 = new prismaBaseTriangular();
-                            double areaTri = pr2.baseTriangulo(ladoTri);
-                            System.out.println("Volume: " + pr2.volumePrisma(altura, (int) areaTri));
+                            System.out.print("Lado do triângulo equilátero: ");
+                            pr2.lado = leia.nextInt();
+                            area = pr2.baseTriangulo();
+                            System.out.println("Volume: " + pr2.volumePrisma(altura, area));
                             break;
 
                         case 3: // Cilíndrico
-                            System.out.print("Raio da base: ");
-                            int raio = leia.nextInt();
                             prismaCilindro pr3 = new prismaCilindro();
-                            double areaCirc = pr3.areaCirculo(raio);
-                            System.out.println("Volume: " + pr3.volumePrisma(altura, (int) areaCirc));
+                            System.out.print("Raio da base: ");
+                            pr3.raio = leia.nextInt();
+                            area = pr3.baseCirculo();
+                            System.out.println("Volume: " + pr3.volumePrisma(altura, area));
                             break;
 
                         case 4: // Pentagonal
-                            System.out.print("Lado da base: ");
-                            int ladoPent = leia.nextInt();
                             prismaBasePentagonal pr4 = new prismaBasePentagonal();
-                            double areaPent = pr4.areaPentagonal(ladoPent);
-                            System.out.println("Volume: " + pr4.volumePrisma(altura, (int) areaPent));
+                            System.out.print("Lado da base: ");
+                            pr4.lado = leia.nextInt();
+                            area = pr4.areaPentagonal();
+                            System.out.println("Volume: " + pr4.volumePrisma(altura, area));
                             break;
 
                         case 5: // Hexagonal
-                            System.out.print("Lado da base: ");
-                            int ladoHex = leia.nextInt();
                             prismaBaseHexagonal pr5 = new prismaBaseHexagonal();
-                            double areaHex = pr5.areaHexagonal(ladoHex);
-                            System.out.println("Volume: " + pr5.volumePrisma(altura, (int) areaHex));
+                            System.out.print("Lado da base: ");
+                            pr5.lado = leia.nextInt();
+                            area = pr5.areaHexagonal();
+                            System.out.println("Volume: " + pr5.volumePrisma(altura, area));
                             break;
 
                         default:
@@ -80,14 +71,7 @@ public class Grupo2Atividade4 {
                     break;
 
                 case 2:
-                    System.out.println("\nEscolha o tipo de pirâmide:");
-                    System.out.println("1 - Retangular");
-                    System.out.println("2 - Triangular");
-                    System.out.println("3 - Cilíndrica");
-                    System.out.println("4 - Pentagonal");
-                    System.out.println("5 - Hexagonal");
-                    System.out.println("6 - Heptagonal");
-                    System.out.print("Opção: ");
+                    System.out.println("\nEscolha o formato da base: \n1 - Retangular \n 2 - Triangular \n3 - Circular \n4 - Pentagonal \n5 - Hexagonal \n5 - Heptagonal \nOpção:  \n");
                     subOpcao = leia.nextInt();
 
                     System.out.print("Digite a altura da pirâmide: ");
@@ -188,5 +172,134 @@ public class Grupo2Atividade4 {
 
         leia.close();
         System.out.println("Programa encerrado.");
+    }
+    public static class Prisma{
+            int altura, ladoraio;
+            public double volumePrisma(int altura, double areaBase){
+                double volume;
+                volume=(double)altura*areaBase;
+                return volume;
+        }
+    }
+    public static class prismaBaseRetangular extends Prisma{
+            int lado2;
+            public double baseQuadrado(int ladoraio, int lado2){
+                int area;
+                area = ladoraio * lado2;
+                return area;
+        }
+    }
+
+    public static class prismaBaseTriangular extends Prisma{
+        public double baseTriangulo(int ladoraio){
+            double area;
+            area = (Math.pow((double)ladoraio, 2)*Math.sqrt(3))/4;
+            return area;
+        }
+    }
+
+    public static class prismaCilindro extends Prisma{
+        public double baseCirculo(int lado){
+            int area;
+            double valorPi = 3.141592;
+            area = valorPi * (Math.pow(ladoraio));
+            return area;
+        }
+    }
+
+    public static class prismaBasePentagonal extends Prisma{
+        int lado;
+        public double areaPentagonal(int lado){
+            double area, apotema;
+            apotema = lado / (2 * 0.72654);
+            area = ((lado*5)*apotema)/2;
+        }
+    }
+
+    public static class prismaBaseHexagonal extends Prisma{
+        int lado;
+        public double areaHexagonal(int lado){
+            double area, apotema;
+            apotema = lado / (2 * 1.7320);
+            area = ((lado*5)*apotema)/2;
+        }
+    }
+
+    public static class Esfera{
+        int raio;
+        public double volumeEsfera(int raio){
+            double volume;
+            volume = 4/3*(3.141592*Math.pow(raio, 3));
+            return volume;
+        }
+    }
+
+    public static class Octaedro{
+        int lado;
+        public double volumeOctaedro(int lado){
+            double volume;
+            volume = (15+7*Math.sqrt(5))*Math.pow(a, 3)/4;
+            return volume;
+        }
+    } 
+
+    public static class Piramide{
+            int altura, ladoraio;
+            public double volumePiramide(int altura, double areaBase){
+                double volume;
+                volume=(double)(altura*areaBase)/3;
+                return volume;
+        }
+    }
+    public static class piramideBaseRetangular extends Piramide{
+            int lado2;
+            public int baseQuadrado(int ladoraio, int lado2){
+                int area;
+                area = ladoraio * lado2;
+                return area;
+        }
+    }
+    
+    public static class piramideBasePentagonal extends Piramide{
+        int lado;
+        public double areaHexagonal(int lado){
+            double area, apotema;
+            apotema = lado / (2 * 0.72654);
+            area = ((lado*5)*apotema)/2;
+        }
+    }
+
+    public static class piramideBaseHexagonal extends Piramide{
+        int lado;
+        public double areaHexagonal(int lado){
+            double area, apotema;
+            apotema = lado / (2 * 1.7320);
+            area = ((lado*5)*apotema)/2;
+        }
+    }
+
+    public static class piramideBaseHeptagonal extends Piramide{
+        int lado;
+        public double areaHeptagonal(int lado){
+            double area, apotema;
+            apotema = lado / (2 * 0.48157);
+            area = ((lado*5)*apotema)/2;
+        }
+    }
+
+    public static class piramideBaseTriangular extends Piramide{
+        public double baseTriangulo(int ladoraio){
+            double area;
+            area = (Math.pow((double)ladoraio, 2)*Math.sqrt(3))/4;
+            return area;
+        }
+    }
+
+    public static class piramideCilindro extends Piramide{
+        public double baseCirculo(int lado){
+            double area;
+            area = 3.141592 * (Math.pow((double)lado));
+            return area;
+        }
     }
 }
