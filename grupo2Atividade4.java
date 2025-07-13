@@ -149,10 +149,9 @@ public class grupo2Atividade4 {
                             break;
 
                         case 2: // Octaedro
-                            System.out.print("Digite o lado do octaedro: ");
-                            int ladoOct = leia.nextInt();
                             Octaedro oct = new Octaedro();
-                            oct.setLado(ladoOct);
+                            System.out.print("Digite o lado do octaedro: ");
+                            oct.lado = leia.nextInt();
                             System.out.println("Volume do octaedro: " + oct.volumeOctaedro());
                             break;
 
@@ -201,8 +200,7 @@ public class grupo2Atividade4 {
     public static class prismaCilindro extends Prisma{
         public double baseCirculo(int lado){
             int area;
-            double valorPi = 3.141592;
-            area = valorPi * (Math.pow(ladoraio));
+            area = 3.141592 * (Math.pow(lado, 2));
             return area;
         }
     }
@@ -238,7 +236,7 @@ public class grupo2Atividade4 {
         int lado;
         public double volumeOctaedro(int lado){
             double volume;
-            volume = (15+7*Math.sqrt(5))*Math.pow(a, 3)/4;
+            volume = (15+7*Math.sqrt(5))*Math.pow(lado, 3)/4;
             return volume;
         }
     } 
@@ -298,7 +296,7 @@ public class grupo2Atividade4 {
     public static class piramideCilindro extends Piramide{
         public double baseCirculo(int lado){
             double area;
-            area = 3.141592 * (Math.pow((double)lado));
+            area = 3.141592 * (Math.pow((double)lado, 2));
             return area;
         }
     }
