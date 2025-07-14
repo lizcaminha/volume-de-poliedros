@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Grupo2Atividade4 {
+public class grupo2Atividade4 {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class Grupo2Atividade4 {
                             int lado2 = leia.nextInt();
                             area = pr1.baseQuadrada(lado, lado2);
                             volume = pr1.volumePrisma(altura, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 2: // Triangular
@@ -40,7 +40,7 @@ public class Grupo2Atividade4 {
                             lado = leia.nextInt();
                             area = pr2.baseTriangular(lado);
                             volume = pr2.volumePrisma(altura, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 3: // Cilíndrico
@@ -49,7 +49,7 @@ public class Grupo2Atividade4 {
                             lado = leia.nextInt();
                             area = pr3.baseCirculo(lado);
                             volume = pr3.volumePrisma(altura, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 4: // Pentagonal
@@ -58,7 +58,7 @@ public class Grupo2Atividade4 {
                             lado = leia.nextInt();
                             area = pr4.areaPentagonal(lado);
                             volume = pr4.volumePrisma(altura, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 5: // Hexagonal
@@ -67,7 +67,7 @@ public class Grupo2Atividade4 {
                             lado = leia.nextInt();
                             area = pr5.areaHexagonal(lado);
                             volume = pr5.volumePrisma(altura, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         default:
@@ -91,7 +91,7 @@ public class Grupo2Atividade4 {
                             int l2 = leia.nextInt();
                             area = pi1.baseQuadrada(lado, l2);
                             volume = pi1.volumePiramide(alturaP, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 2:
@@ -100,7 +100,7 @@ public class Grupo2Atividade4 {
                             lado = leia.nextInt();
                             area = pi2.baseTriangular(lado);
                             volume = pi2.volumePiramide(alturaP, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 3:
@@ -109,7 +109,7 @@ public class Grupo2Atividade4 {
                             int raio = leia.nextInt();
                             area = pi3.baseCirculo(raio);
                             volume = pi3.volumePiramide(alturaP, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 4:
@@ -118,7 +118,7 @@ public class Grupo2Atividade4 {
                             lado = leia.nextInt();
                             area = pi4.areaPentagonal(lado);
                             volume = pi4.volumePiramide(alturaP, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 5:
@@ -127,7 +127,7 @@ public class Grupo2Atividade4 {
                             PiramideBaseHexagonal pi5 = new PiramideBaseHexagonal();
                             area = pi5.areaHexagonal(lado);
                             volume = pi5.volumePiramide(alturaP, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         case 6:
@@ -136,7 +136,7 @@ public class Grupo2Atividade4 {
                             PiramideBaseHeptagonal pi6 = new PiramideBaseHeptagonal();
                             area = pi6.areaHeptagonal(lado);
                             volume = pi6.volumePiramide(alturaP, area);
-                            System.out.println("Volume: " + volume);
+                            System.out.println("Volume: " + volume + "\nÁrea da Base: " + area);
                             break;
 
                         default:
@@ -217,8 +217,8 @@ public class Grupo2Atividade4 {
 
     public static class PrismaBaseHexagonal extends Prisma {
         public double areaHexagonal(int lado) {
-            double apotema = lado / (2 * 1.7320);
-            return (6 * lado * apotema) / 2;
+            double area = (3*Math.pow(lado, 2.0)*Math.sqrt(3.0))/2;
+            return area;
         }
     }
 
@@ -256,15 +256,17 @@ public class Grupo2Atividade4 {
 
     public static class PiramideBaseHexagonal extends Piramide {
         public double areaHexagonal(int lado) {
-            double apotema = lado / (2 * 1.7320);
-            return (6 * lado * apotema) / 2;
+            
+            double area = (3*Math.pow(lado, 2.0)*Math.sqrt(3.0))/2;
+            return area;
         }
     }
 
     public static class PiramideBaseHeptagonal extends Piramide {
         public double areaHeptagonal(int lado) {
-            double apotema = lado / (2 * 0.48157);
-            return (7 * lado * apotema) / 2;
+            double cotan = 1.0/Math.tan(Math.PI/7.0);
+            double area = ((7*Math.pow(lado, 2))/4.0)*cotan;
+            return area;
         }
     }
 
@@ -277,7 +279,9 @@ public class Grupo2Atividade4 {
 
     public static class Octaedro {
         public double volumeOctaedro(int lado) {
-            return (15 + 7 * Math.sqrt(5)) * Math.pow(lado, 3) / 4;
+            double vol;
+            vol = (Math.sqrt(2.0)/3)*Math.pow(lado, 3.0);
+            return vol;
         }
     }
 }
