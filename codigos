@@ -1,0 +1,53 @@
+public class codigos {
+    public static void main(String args[]) {
+       //base triangular
+       try{
+            double n1 = Double.parseDouble(jTextField.getText());
+            double n3 = Double.parseDouble(jTextField.getText());
+            jLabel.setText("O volume é: " + resultado);
+
+        }catch (NumberFormatException e){
+            jLabel.setText("Digite números válidos!");
+        }
+       
+    }
+    public double Prisma(double base, double height){
+        double volume = base * height;
+        return volume;
+    }
+    public double Piramide (double base, double height){
+        double volume = (base * height)/3;
+        return volume;
+    }
+    
+    public double Quadrado (double bheight, double bbase){
+        double area = bheight * bbase;
+        return area;
+    }
+    public double Triangulo (double lado){
+        double area = (lado*lado) * 1.73 / 4;
+        return area;
+    }
+    public double Circulo (double raio){
+        double area = 3.1415 * (raio*raio);
+        return area;
+    }
+    public double Pentagono (double lado){
+        double apotema = lado / (2 * 0.72);
+        double area = (5 * lado * apotema) / 2;
+        return area;
+    }
+    public double Hexagono (double lado){
+        double area = (3 * (lado*lado)*1.73)/2;
+        return area;
+    }
+    public double Heptagono (double lado){
+        double cotan = ;
+        double area = (5 * lado * apotema) / 2;
+        return area;
+    }
+
+////
+ CardLayout cl = (CardLayout)(jPanel7.getLayout());
+        cl.show(jPanel7, "card6");
+}
