@@ -42,9 +42,16 @@ public class codigos {
         return area;
     }
     public double Heptagono (double lado){
-        double cotan = ;
-        double area = (5 * lado * apotema) / 2;
+        double area = (lado*lado) * 3,634;
         return area;
+    }
+    public double Esfera (double raio){
+        double volume = 4/3 * 3.1415 * raio;
+        return volume;
+    }
+    public double Octaedro (double lado){
+        double volume = ((lado * lado * lado)* 1.4142)/3;
+        return volume;
     }
 
 ////
