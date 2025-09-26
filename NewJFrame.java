@@ -145,10 +145,15 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
+        jTabbedPane1.setBackground(new java.awt.Color(81, 100, 122));
+        jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        fundoLateralPris.setBackground(new java.awt.Color(204, 204, 204));
+        panelPrismas.setBackground(new java.awt.Color(0, 7, 39));
 
+        fundoLateralPris.setBackground(new java.awt.Color(9, 81, 105));
+
+        botaoPrisCirc.setBackground(new java.awt.Color(9, 81, 105));
+        botaoPrisCirc.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisCirc.setText("Circular");
         botaoPrisCirc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,6 +161,8 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        botaoPrisRet.setBackground(new java.awt.Color(9, 81, 105));
+        botaoPrisRet.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisRet.setText("Retangular");
         botaoPrisRet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,6 +170,8 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        botaoPrisPent.setBackground(new java.awt.Color(9, 81, 105));
+        botaoPrisPent.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisPent.setText("Pentagonal");
         botaoPrisPent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,6 +179,8 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        botaoPrisHex.setBackground(new java.awt.Color(9, 81, 105));
+        botaoPrisHex.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisHex.setText("Hexagonal");
         botaoPrisHex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,6 +188,8 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        botaoPrisTri.setBackground(new java.awt.Color(9, 81, 105));
+        botaoPrisTri.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisTri.setText("Triangular");
         botaoPrisTri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,18 +227,28 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        fundoMeioPris.setBackground(new java.awt.Color(33, 24, 57));
         fundoMeioPris.setLayout(new java.awt.CardLayout());
 
-        fundoPrisTri.setBackground(new java.awt.Color(255, 204, 255));
+        fundoPrisTri.setBackground(new java.awt.Color(0, 7, 39));
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Prisma de base triangular");
 
+        tfieldLBPrisTri.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldLBPrisTri.setForeground(new java.awt.Color(255, 255, 255));
         tfieldLBPrisTri.setText("Lado da base");
 
+        tfieldAPrisTri.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldAPrisTri.setForeground(new java.awt.Color(255, 255, 255));
         tfieldAPrisTri.setText("Altura do poliedro");
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Insira os valores");
 
+        botaoCalcPrisTri.setBackground(new java.awt.Color(0, 7, 39));
+        botaoCalcPrisTri.setForeground(new java.awt.Color(255, 255, 255));
         botaoCalcPrisTri.setText("Calcular!");
         botaoCalcPrisTri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,6 +256,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        resultPrisTri.setForeground(new java.awt.Color(255, 255, 255));
         resultPrisTri.setText("Resultado:");
 
         javax.swing.GroupLayout fundoPrisTriLayout = new javax.swing.GroupLayout(fundoPrisTri);
@@ -280,18 +304,28 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPris.add(fundoPrisTri, "card2");
 
-        fundoPrisRet.setBackground(new java.awt.Color(255, 204, 204));
+        fundoPrisRet.setBackground(new java.awt.Color(0, 7, 39));
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Prisma de base retangular");
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Insira os valores:");
 
+        tfieldLB1PrisRet.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldLB1PrisRet.setForeground(new java.awt.Color(255, 255, 255));
         tfieldLB1PrisRet.setText("Lado 1 da base");
 
+        tfieldLB2PrisRet.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldLB2PrisRet.setForeground(new java.awt.Color(255, 255, 255));
         tfieldLB2PrisRet.setText("Lado 2 da base");
 
+        tfieldAPrisRet.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldAPrisRet.setForeground(new java.awt.Color(255, 255, 255));
         tfieldAPrisRet.setText("Altura do poliedro");
 
+        botaoCalcPrisRet.setBackground(new java.awt.Color(0, 7, 39));
+        botaoCalcPrisRet.setForeground(new java.awt.Color(255, 255, 255));
         botaoCalcPrisRet.setText("Calcular!");
         botaoCalcPrisRet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -299,6 +333,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        resultPrisRet.setForeground(new java.awt.Color(255, 255, 255));
         resultPrisRet.setText("Resultado:");
 
         javax.swing.GroupLayout fundoPrisRetLayout = new javax.swing.GroupLayout(fundoPrisRet);
@@ -349,16 +384,24 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPris.add(fundoPrisRet, "card3");
 
-        fundoPrisPent.setBackground(new java.awt.Color(255, 204, 153));
+        fundoPrisPent.setBackground(new java.awt.Color(0, 7, 39));
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Prisma de base pentagonal");
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Insira os valores:");
 
+        tfieldLBPrisPent.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldLBPrisPent.setForeground(new java.awt.Color(255, 255, 255));
         tfieldLBPrisPent.setText("Lado da base");
 
+        tfieldAPrisPent.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldAPrisPent.setForeground(new java.awt.Color(255, 255, 255));
         tfieldAPrisPent.setText("Altura do poliedro");
 
+        botaoCalcPrisPent.setBackground(new java.awt.Color(0, 7, 39));
+        botaoCalcPrisPent.setForeground(new java.awt.Color(255, 255, 255));
         botaoCalcPrisPent.setText("Calcular!");
         botaoCalcPrisPent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -366,6 +409,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        resultPrisPent.setForeground(new java.awt.Color(255, 255, 255));
         resultPrisPent.setText("jLabel7");
 
         javax.swing.GroupLayout fundoPrisPentLayout = new javax.swing.GroupLayout(fundoPrisPent);
@@ -413,18 +457,27 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPris.add(fundoPrisPent, "card4");
 
-        fundoPrisHex.setBackground(new java.awt.Color(255, 255, 204));
+        fundoPrisHex.setBackground(new java.awt.Color(0, 7, 39));
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Prisma de base hexagonal");
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Insira os valores:");
 
+        resultPrisHex.setForeground(new java.awt.Color(255, 255, 255));
         resultPrisHex.setText("Resultado:");
 
+        tfieldLBPrisHex.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldLBPrisHex.setForeground(new java.awt.Color(255, 255, 255));
         tfieldLBPrisHex.setText("Lado da base");
 
+        ifieldAPrisHex.setBackground(new java.awt.Color(0, 7, 39));
+        ifieldAPrisHex.setForeground(new java.awt.Color(255, 255, 255));
         ifieldAPrisHex.setText("Altura do poliedro");
 
+        botaoCalcPrisHex.setBackground(new java.awt.Color(0, 7, 39));
+        botaoCalcPrisHex.setForeground(new java.awt.Color(255, 255, 255));
         botaoCalcPrisHex.setText("Calcular!");
         botaoCalcPrisHex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -477,17 +530,25 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPris.add(fundoPrisHex, "card5");
 
-        fundoPrisCirc.setBackground(new java.awt.Color(204, 255, 204));
+        fundoPrisCirc.setBackground(new java.awt.Color(0, 7, 39));
         fundoPrisCirc.setPreferredSize(new java.awt.Dimension(569, 441));
 
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Cilindro");
 
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Insira os valores:");
 
+        tfieldRPrisCirc.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldRPrisCirc.setForeground(new java.awt.Color(255, 255, 255));
         tfieldRPrisCirc.setText("Raio da base");
 
+        tfieldAPrisCirc.setBackground(new java.awt.Color(0, 7, 39));
+        tfieldAPrisCirc.setForeground(new java.awt.Color(255, 255, 255));
         tfieldAPrisCirc.setText("Altura cilindro");
 
+        botaoCalcPrisCirc.setBackground(new java.awt.Color(0, 7, 39));
+        botaoCalcPrisCirc.setForeground(new java.awt.Color(255, 255, 255));
         botaoCalcPrisCirc.setText("Calcular!");
         botaoCalcPrisCirc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -495,6 +556,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        resultPrisCirc.setForeground(new java.awt.Color(255, 255, 255));
         resultPrisCirc.setText("Resultado:");
 
         javax.swing.GroupLayout fundoPrisCircLayout = new javax.swing.GroupLayout(fundoPrisCirc);
@@ -565,7 +627,9 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Prismas", panelPrismas);
 
-        fundoLateralPira.setBackground(new java.awt.Color(204, 204, 204));
+        panelPiramides.setBackground(new java.awt.Color(69, 60, 92));
+
+        fundoLateralPira.setBackground(new java.awt.Color(49, 183, 114));
         fundoLateralPira.setPreferredSize(new java.awt.Dimension(185, 441));
 
         botaoPiraTri.setText("Triangular");
@@ -615,7 +679,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPira.setLayout(new java.awt.CardLayout());
 
-        fundoPiraTri.setBackground(new java.awt.Color(255, 204, 255));
+        fundoPiraTri.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel11.setText("Pirâmide de base triangular");
 
@@ -676,7 +740,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPira.add(fundoPiraTri, "card2");
 
-        fundoPiraRet.setBackground(new java.awt.Color(255, 204, 204));
+        fundoPiraRet.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel13.setText("Pirâmide de base retangular");
 
@@ -739,7 +803,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPira.add(fundoPiraRet, "card3");
 
-        fundoPiraPent.setBackground(new java.awt.Color(255, 204, 153));
+        fundoPiraPent.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel15.setText("Pirâmide de base pentagonal");
 
@@ -798,7 +862,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPira.add(fundoPiraPent, "card4");
 
-        fundoPiraHex.setBackground(new java.awt.Color(255, 255, 204));
+        fundoPiraHex.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel19.setText("Pirâmide de base hexagonal");
 
@@ -857,7 +921,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPira.add(fundoPiraHex, "card5");
 
-        fundoPiraHept.setBackground(new java.awt.Color(204, 204, 255));
+        fundoPiraHept.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel21.setText("Pirâmide de base heptagonal");
 
@@ -916,7 +980,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioPira.add(fundoPiraHept, "card7");
 
-        fundoPiraCirc.setBackground(new java.awt.Color(204, 255, 204));
+        fundoPiraCirc.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel23.setText("Cone");
 
@@ -998,7 +1062,9 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Pirâmides", panelPiramides);
 
-        fundoLateralOut.setBackground(new java.awt.Color(204, 204, 204));
+        panelOutros.setBackground(new java.awt.Color(69, 60, 92));
+
+        fundoLateralOut.setBackground(new java.awt.Color(49, 183, 114));
         fundoLateralOut.setPreferredSize(new java.awt.Dimension(185, 441));
 
         botaoOutOct.setText("Octaedro");
@@ -1028,7 +1094,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioOut.setLayout(new java.awt.CardLayout());
 
-        fundoOutOct.setBackground(new java.awt.Color(153, 153, 255));
+        fundoOutOct.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel25.setText("Octaedro");
 
@@ -1079,7 +1145,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         fundoMeioOut.add(fundoOutOct, "card2");
 
-        fundoOutEsf.setBackground(new java.awt.Color(204, 255, 255));
+        fundoOutEsf.setBackground(new java.awt.Color(69, 60, 92));
 
         jLabel27.setText("Esfera");
 
@@ -1170,7 +1236,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void botaoPrisCircActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPrisCircActionPerformed
         CardLayout cl = (CardLayout)(fundoMeioPris.getLayout());
-        cl.show(fundoMeioPris, "card2");
+        cl.show(fundoMeioPris, "card6");
     }//GEN-LAST:event_botaoPrisCircActionPerformed
 
     private void botaoPrisRetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPrisRetActionPerformed
@@ -1190,7 +1256,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void botaoPrisTriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPrisTriActionPerformed
         CardLayout cl = (CardLayout)(fundoMeioPris.getLayout());
-        cl.show(fundoMeioPris, "card6");
+        cl.show(fundoMeioPris, "card2");
     }//GEN-LAST:event_botaoPrisTriActionPerformed
 
     private void botaoCalcPrisRetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCalcPrisRetActionPerformed
