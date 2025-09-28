@@ -145,16 +145,18 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTabbedPane1.setBackground(new java.awt.Color(81, 100, 122));
+        jTabbedPane1.setBackground(new java.awt.Color(8, 68, 105));
+        jTabbedPane1.setForeground(new java.awt.Color(255, 255, 255));
         jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        panelPrismas.setBackground(new java.awt.Color(0, 7, 39));
+        panelPrismas.setBackground(new java.awt.Color(243, 243, 243));
 
-        fundoLateralPris.setBackground(new java.awt.Color(9, 81, 105));
+        fundoLateralPris.setBackground(new java.awt.Color(8, 68, 105));
 
         botaoPrisCirc.setBackground(new java.awt.Color(9, 81, 105));
         botaoPrisCirc.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisCirc.setText("Circular");
+        botaoPrisCirc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 243, 243)));
         botaoPrisCirc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoPrisCircActionPerformed(evt);
@@ -164,6 +166,7 @@ public class NewJFrame extends javax.swing.JFrame {
         botaoPrisRet.setBackground(new java.awt.Color(9, 81, 105));
         botaoPrisRet.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisRet.setText("Retangular");
+        botaoPrisRet.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 243, 243)));
         botaoPrisRet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoPrisRetActionPerformed(evt);
@@ -173,6 +176,7 @@ public class NewJFrame extends javax.swing.JFrame {
         botaoPrisPent.setBackground(new java.awt.Color(9, 81, 105));
         botaoPrisPent.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisPent.setText("Pentagonal");
+        botaoPrisPent.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 243, 243)));
         botaoPrisPent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoPrisPentActionPerformed(evt);
@@ -182,6 +186,7 @@ public class NewJFrame extends javax.swing.JFrame {
         botaoPrisHex.setBackground(new java.awt.Color(9, 81, 105));
         botaoPrisHex.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisHex.setText("Hexagonal");
+        botaoPrisHex.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 243, 243)));
         botaoPrisHex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoPrisHexActionPerformed(evt);
@@ -191,6 +196,7 @@ public class NewJFrame extends javax.swing.JFrame {
         botaoPrisTri.setBackground(new java.awt.Color(9, 81, 105));
         botaoPrisTri.setForeground(new java.awt.Color(255, 255, 255));
         botaoPrisTri.setText("Triangular");
+        botaoPrisTri.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 243, 243)));
         botaoPrisTri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoPrisTriActionPerformed(evt);
@@ -202,53 +208,56 @@ public class NewJFrame extends javax.swing.JFrame {
         fundoLateralPrisLayout.setHorizontalGroup(
             fundoLateralPrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoLateralPrisLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(fundoLateralPrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(botaoPrisCirc)
-                    .addComponent(botaoPrisHex)
-                    .addComponent(botaoPrisPent)
-                    .addComponent(botaoPrisRet)
-                    .addComponent(botaoPrisTri))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGap(48, 48, 48)
+                .addGroup(fundoLateralPrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botaoPrisCirc, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(fundoLateralPrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(botaoPrisPent, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botaoPrisRet, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botaoPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botaoPrisHex, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         fundoLateralPrisLayout.setVerticalGroup(
             fundoLateralPrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoLateralPrisLayout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(botaoPrisTri)
-                .addGap(46, 46, 46)
-                .addComponent(botaoPrisRet)
-                .addGap(45, 45, 45)
-                .addComponent(botaoPrisPent)
                 .addGap(43, 43, 43)
-                .addComponent(botaoPrisHex)
-                .addGap(43, 43, 43)
-                .addComponent(botaoPrisCirc)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(botaoPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(botaoPrisRet, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(botaoPrisPent, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(botaoPrisHex, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(botaoPrisCirc, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
         );
 
         fundoMeioPris.setBackground(new java.awt.Color(33, 24, 57));
         fundoMeioPris.setLayout(new java.awt.CardLayout());
 
-        fundoPrisTri.setBackground(new java.awt.Color(0, 7, 39));
+        fundoPrisTri.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(8, 68, 105));
         jLabel1.setText("Prisma de base triangular");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        tfieldLBPrisTri.setBackground(new java.awt.Color(0, 7, 39));
-        tfieldLBPrisTri.setForeground(new java.awt.Color(255, 255, 255));
+        tfieldLBPrisTri.setForeground(new java.awt.Color(8, 68, 105));
         tfieldLBPrisTri.setText("Lado da base");
 
-        tfieldAPrisTri.setBackground(new java.awt.Color(0, 7, 39));
-        tfieldAPrisTri.setForeground(new java.awt.Color(255, 255, 255));
+        tfieldAPrisTri.setForeground(new java.awt.Color(8, 68, 105));
         tfieldAPrisTri.setText("Altura do poliedro");
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Insira os valores");
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(8, 68, 105));
+        jLabel2.setText("Insira os valores:");
 
-        botaoCalcPrisTri.setBackground(new java.awt.Color(0, 7, 39));
-        botaoCalcPrisTri.setForeground(new java.awt.Color(255, 255, 255));
+        botaoCalcPrisTri.setBackground(new java.awt.Color(8, 68, 105));
+        botaoCalcPrisTri.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
+        botaoCalcPrisTri.setForeground(new java.awt.Color(243, 243, 243));
         botaoCalcPrisTri.setText("Calcular!");
         botaoCalcPrisTri.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,48 +265,45 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        resultPrisTri.setForeground(new java.awt.Color(255, 255, 255));
+        resultPrisTri.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        resultPrisTri.setForeground(new java.awt.Color(8, 68, 105));
         resultPrisTri.setText("Resultado:");
 
         javax.swing.GroupLayout fundoPrisTriLayout = new javax.swing.GroupLayout(fundoPrisTri);
         fundoPrisTri.setLayout(fundoPrisTriLayout);
         fundoPrisTriLayout.setHorizontalGroup(
             fundoPrisTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fundoPrisTriLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fundoPrisTriLayout.createSequentialGroup()
+                .addGap(73, 73, 73)
                 .addComponent(tfieldLBPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(tfieldAPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(103, 103, 103))
+                .addGap(109, 109, 109))
             .addGroup(fundoPrisTriLayout.createSequentialGroup()
-                .addGroup(fundoPrisTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(22, 22, 22)
+                .addGroup(fundoPrisTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(botaoCalcPrisTri, javax.swing.GroupLayout.DEFAULT_SIZE, 461, Short.MAX_VALUE)
+                    .addComponent(resultPrisTri, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(fundoPrisTriLayout.createSequentialGroup()
-                        .addGap(195, 195, 195)
-                        .addComponent(jLabel1))
-                    .addGroup(fundoPrisTriLayout.createSequentialGroup()
-                        .addGap(206, 206, 206)
-                        .addComponent(botaoCalcPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(fundoPrisTriLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(fundoPrisTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(resultPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel1)))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         fundoPrisTriLayout.setVerticalGroup(
             fundoPrisTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoPrisTriLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(24, 24, 24)
                 .addComponent(jLabel1)
-                .addGap(57, 57, 57)
+                .addGap(53, 53, 53)
                 .addComponent(jLabel2)
-                .addGap(34, 34, 34)
+                .addGap(35, 35, 35)
                 .addGroup(fundoPrisTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldAPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldLBPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
-                .addComponent(botaoCalcPrisTri)
-                .addGap(81, 81, 81)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addComponent(botaoCalcPrisTri, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56)
                 .addComponent(resultPrisTri)
                 .addGap(80, 80, 80))
         );
@@ -375,7 +381,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(tfieldLB1PrisRet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPrisRet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldLB2PrisRet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
                 .addComponent(botaoCalcPrisRet)
                 .addGap(47, 47, 47)
                 .addComponent(resultPrisRet)
@@ -448,7 +454,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPrisPentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldLBPrisPent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPrisPent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(botaoCalcPrisPent)
                 .addGap(52, 52, 52)
                 .addComponent(resultPrisPent)
@@ -521,7 +527,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPrisHexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldLBPrisHex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ifieldAPrisHex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
                 .addComponent(botaoCalcPrisHex)
                 .addGap(67, 67, 67)
                 .addComponent(resultPrisHex)
@@ -595,7 +601,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPrisCircLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldRPrisCirc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPrisCirc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
                 .addComponent(botaoCalcPrisCirc)
                 .addGap(88, 88, 88)
                 .addComponent(resultPrisCirc)
@@ -627,21 +633,39 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Prismas", panelPrismas);
 
-        panelPiramides.setBackground(new java.awt.Color(69, 60, 92));
+        panelPiramides.setBackground(new java.awt.Color(255, 255, 255));
 
-        fundoLateralPira.setBackground(new java.awt.Color(49, 183, 114));
+        fundoLateralPira.setBackground(new java.awt.Color(4, 1, 26));
         fundoLateralPira.setPreferredSize(new java.awt.Dimension(185, 441));
 
+        botaoPiraTri.setBackground(new java.awt.Color(4, 1, 26));
+        botaoPiraTri.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        botaoPiraTri.setForeground(new java.awt.Color(255, 255, 255));
         botaoPiraTri.setText("Triangular");
 
+        botaoPiraRet.setBackground(new java.awt.Color(4, 1, 26));
+        botaoPiraRet.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        botaoPiraRet.setForeground(new java.awt.Color(255, 255, 255));
         botaoPiraRet.setText("Retangular");
 
+        botaoPiraPent.setBackground(new java.awt.Color(4, 1, 26));
+        botaoPiraPent.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        botaoPiraPent.setForeground(new java.awt.Color(255, 255, 255));
         botaoPiraPent.setText("Pentagonal");
 
+        botaoPiraHex.setBackground(new java.awt.Color(4, 1, 26));
+        botaoPiraHex.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        botaoPiraHex.setForeground(new java.awt.Color(255, 255, 255));
         botaoPiraHex.setText("Hexagonal");
 
+        botaoPiraHept.setBackground(new java.awt.Color(4, 1, 26));
+        botaoPiraHept.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        botaoPiraHept.setForeground(new java.awt.Color(255, 255, 255));
         botaoPiraHept.setText("Heptagonal");
 
+        botaoPiraCirc.setBackground(new java.awt.Color(4, 1, 26));
+        botaoPiraCirc.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        botaoPiraCirc.setForeground(new java.awt.Color(255, 255, 255));
         botaoPiraCirc.setText("Circular");
 
         javax.swing.GroupLayout fundoLateralPiraLayout = new javax.swing.GroupLayout(fundoLateralPira);
@@ -649,48 +673,59 @@ public class NewJFrame extends javax.swing.JFrame {
         fundoLateralPiraLayout.setHorizontalGroup(
             fundoLateralPiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoLateralPiraLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(fundoLateralPiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(botaoPiraCirc)
-                    .addComponent(botaoPiraHept)
-                    .addComponent(botaoPiraHex)
-                    .addComponent(botaoPiraPent)
-                    .addComponent(botaoPiraRet)
-                    .addComponent(botaoPiraTri))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGap(48, 48, 48)
+                .addGroup(fundoLateralPiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botaoPiraCirc, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoPiraHept, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoPiraHex, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoPiraPent, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoPiraRet, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         fundoLateralPiraLayout.setVerticalGroup(
             fundoLateralPiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoLateralPiraLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(botaoPiraTri)
-                .addGap(40, 40, 40)
-                .addComponent(botaoPiraRet)
-                .addGap(45, 45, 45)
-                .addComponent(botaoPiraPent)
-                .addGap(46, 46, 46)
-                .addComponent(botaoPiraHex)
-                .addGap(36, 36, 36)
-                .addComponent(botaoPiraHept)
+                .addGap(43, 43, 43)
+                .addComponent(botaoPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(botaoPiraRet, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
-                .addComponent(botaoPiraCirc)
+                .addComponent(botaoPiraPent, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(botaoPiraHex, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(botaoPiraHept, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(botaoPiraCirc, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         fundoMeioPira.setLayout(new java.awt.CardLayout());
 
-        fundoPiraTri.setBackground(new java.awt.Color(69, 60, 92));
+        fundoPiraTri.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel11.setFont(new java.awt.Font("Nirmala UI", 1, 36)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(4, 1, 26));
         jLabel11.setText("Pirâmide de base triangular");
 
-        jLabel12.setText("Insira os valores");
+        jLabel12.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(4, 1, 26));
+        jLabel12.setText("Insira os valores:");
 
+        tfieldLBPiraTri.setForeground(new java.awt.Color(4, 1, 26));
         tfieldLBPiraTri.setText("Lado da base");
 
+        tfieldAPiraTri.setForeground(new java.awt.Color(4, 1, 26));
         tfieldAPiraTri.setText("Altura poliedro");
 
+        botaoCalcPiraTri.setBackground(new java.awt.Color(74, 204, 155));
+        botaoCalcPiraTri.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        botaoCalcPiraTri.setForeground(new java.awt.Color(4, 1, 26));
         botaoCalcPiraTri.setText("Calcular!");
+        botaoCalcPiraTri.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        resultPiraTri.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         resultPiraTri.setText("Resultado:");
 
         javax.swing.GroupLayout fundoPiraTriLayout = new javax.swing.GroupLayout(fundoPiraTri);
@@ -698,44 +733,39 @@ public class NewJFrame extends javax.swing.JFrame {
         fundoPiraTriLayout.setHorizontalGroup(
             fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoPiraTriLayout.createSequentialGroup()
-                .addGroup(fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(fundoPiraTriLayout.createSequentialGroup()
-                        .addGap(203, 203, 203)
-                        .addComponent(jLabel11))
-                    .addGroup(fundoPiraTriLayout.createSequentialGroup()
-                        .addGap(228, 228, 228)
-                        .addComponent(botaoCalcPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(235, Short.MAX_VALUE))
-            .addGroup(fundoPiraTriLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addGroup(fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(fundoPiraTriLayout.createSequentialGroup()
+                        .addGap(58, 58, 58)
                         .addComponent(tfieldLBPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(tfieldAPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(88, 88, 88))
+                        .addGap(111, 111, 111))
                     .addGroup(fundoPiraTriLayout.createSequentialGroup()
-                        .addGroup(fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12)
-                            .addComponent(resultPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGroup(fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel11)
+                            .addGroup(fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(botaoCalcPiraTri, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 478, Short.MAX_VALUE)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(resultPiraTri, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addContainerGap(36, Short.MAX_VALUE))))
         );
         fundoPiraTriLayout.setVerticalGroup(
             fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoPiraTriLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel11)
-                .addGap(49, 49, 49)
+                .addGap(32, 32, 32)
                 .addComponent(jLabel12)
-                .addGap(37, 37, 37)
+                .addGap(18, 18, 18)
                 .addGroup(fundoPiraTriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldLBPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(68, 68, 68)
-                .addComponent(botaoCalcPiraTri)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addComponent(botaoCalcPiraTri, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
                 .addComponent(resultPiraTri)
-                .addGap(94, 94, 94))
+                .addGap(88, 88, 88))
         );
 
         fundoMeioPira.add(fundoPiraTri, "card2");
@@ -780,7 +810,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(fundoPiraRetLayout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(resultPiraRet, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
         fundoPiraRetLayout.setVerticalGroup(
             fundoPiraRetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -794,7 +824,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(tfieldLB1PiraRet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldLB2PiraRet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPiraRet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
                 .addComponent(botaoCalcPiraRet)
                 .addGap(61, 61, 61)
                 .addComponent(resultPiraRet)
@@ -824,7 +854,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(fundoPiraPentLayout.createSequentialGroup()
                 .addGap(85, 85, 85)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 215, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 201, Short.MAX_VALUE)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(87, 87, 87))
             .addGroup(fundoPiraPentLayout.createSequentialGroup()
@@ -853,7 +883,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPiraPentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(67, 67, 67)
                 .addComponent(jLabel17)
@@ -883,7 +913,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(fundoPiraHexLayout.createSequentialGroup()
                 .addGap(73, 73, 73)
                 .addComponent(tfieldLBPiraHex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 206, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
                 .addComponent(tfieldAPiraHex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(108, 108, 108))
             .addGroup(fundoPiraHexLayout.createSequentialGroup()
@@ -912,7 +942,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPiraHexLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldLBPiraHex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPiraHex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
                 .addComponent(botaoCalcPiraHex)
                 .addGap(73, 73, 73)
                 .addComponent(resultPiraHex)
@@ -942,7 +972,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(fundoPiraHeptLayout.createSequentialGroup()
                 .addGap(87, 87, 87)
                 .addComponent(tfieldLBPiraHept, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 179, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
                 .addComponent(tfieldAPiraHept, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(121, 121, 121))
             .addGroup(fundoPiraHeptLayout.createSequentialGroup()
@@ -971,7 +1001,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPiraHeptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldLBPiraHept, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPiraHept, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                 .addComponent(botaoCalcPiraHept)
                 .addGap(83, 83, 83)
                 .addComponent(resultPiraHept)
@@ -1001,7 +1031,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(fundoPiraCircLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(tfieldRPiraCirc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(tfieldAPiraCirc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(168, 168, 168))
             .addGroup(fundoPiraCircLayout.createSequentialGroup()
@@ -1030,7 +1060,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(fundoPiraCircLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfieldRPiraCirc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tfieldAPiraCirc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addComponent(cotaoCalcPiraCirc)
                 .addGap(74, 74, 74)
                 .addComponent(resultPiraCirc)
@@ -1045,7 +1075,7 @@ public class NewJFrame extends javax.swing.JFrame {
             panelPiramidesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPiramidesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(fundoLateralPira, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fundoLateralPira, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fundoMeioPira, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -1056,7 +1086,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panelPiramidesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(fundoMeioPira, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(fundoLateralPira, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE))
+                    .addComponent(fundoLateralPira, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1111,34 +1141,35 @@ public class NewJFrame extends javax.swing.JFrame {
         fundoOutOctLayout.setHorizontalGroup(
             fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoOutOctLayout.createSequentialGroup()
-                .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(botaoCalcOutOct)
-                    .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(fundoOutOctLayout.createSequentialGroup()
-                            .addGap(247, 247, 247)
-                            .addComponent(jLabel25))
-                        .addGroup(fundoOutOctLayout.createSequentialGroup()
-                            .addGap(237, 237, 237)
-                            .addComponent(tfieldLOutOct, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(fundoOutOctLayout.createSequentialGroup()
-                            .addGap(55, 55, 55)
-                            .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(resultOutOct)
-                                .addComponent(jLabel26)))))
-                .addContainerGap(281, Short.MAX_VALUE))
+                .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(botaoCalcOutOct)
+                        .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(fundoOutOctLayout.createSequentialGroup()
+                                .addGap(237, 237, 237)
+                                .addComponent(tfieldLOutOct, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(fundoOutOctLayout.createSequentialGroup()
+                                .addGap(55, 55, 55)
+                                .addGroup(fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(resultOutOct)
+                                    .addComponent(jLabel26)))))
+                    .addGroup(fundoOutOctLayout.createSequentialGroup()
+                        .addGap(265, 265, 265)
+                        .addComponent(jLabel25)))
+                .addContainerGap(312, Short.MAX_VALUE))
         );
         fundoOutOctLayout.setVerticalGroup(
             fundoOutOctLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundoOutOctLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel25)
-                .addGap(66, 66, 66)
+                .addGap(57, 57, 57)
                 .addComponent(jLabel26)
                 .addGap(84, 84, 84)
                 .addComponent(tfieldLOutOct, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addComponent(botaoCalcOutOct)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                 .addComponent(resultOutOct)
                 .addGap(88, 88, 88))
         );
@@ -1177,7 +1208,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(fundoOutEsfLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(resultOutEsf)))
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(320, Short.MAX_VALUE))
         );
         fundoOutEsfLayout.setVerticalGroup(
             fundoOutEsfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1190,7 +1221,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(tfieldROutEsf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
                 .addComponent(botaoCalcOutEsf)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(resultOutEsf)
                 .addGap(75, 75, 75))
         );
@@ -1214,7 +1245,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panelOutrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(fundoMeioOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(fundoLateralOut, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE))
+                    .addComponent(fundoLateralOut, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
